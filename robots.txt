@@ -1,0 +1,35 @@
+# =============================================
+# KERO'S MOTEL - robots.txt
+# https://kerosmotel.com.br
+# =============================================
+
+# Permitir todos os bots de busca
+User-agent: *
+Allow: /
+
+# Bloquear acesso a arquivos de sistema (se houver)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /*.json$
+Disallow: /*.xml$
+
+# Permitir acesso ao sitemap
+Allow: /sitemap.xml
+
+# Sitemap location
+Sitemap: https://kerosmotel.com.br/sitemap.xml
+
+# Diretivas específicas para Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Diretivas para Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 1
+
+# Diretivas para Yandex
+User-agent: Yandex
+Allow: /
+Crawl-delay: 2
